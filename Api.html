@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cat Facts</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .main{
+            display:flex;
+            justify-content: center;
+        }
+        button {
+            padding: 10px;
+            color: white;
+            background-color: green;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Cat Facts</h1>
-    <button>Click Here To Get Cat Facts</button>
-    <p id="result"></p>
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <div class="main">
+        <div>
+            <div style="text-align: center;">
+            <h1>Cat Facts</h1>
+            <button>Click Here To Get Cat Facts</button>
+            </div>
+            <p id="result"></p>
+            <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+        </div>
+    </div>
     <script src="api.js"></script>
 </body>
+
 </html>
